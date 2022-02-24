@@ -5,6 +5,7 @@ import Category from './pages/Category';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import './App.css';
+import { Header } from 'antd/lib/layout/layout';
 
 export default function App() {
   return (

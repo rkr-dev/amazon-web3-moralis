@@ -8,6 +8,7 @@ import {
   usa as USA,
 } from '../../images';
 import './Header.css';
+import { SubHeader } from '../SubHeader/SubHeader';
 
 export const Header = () => {
   const { authenticate, account } = useMoralis();
@@ -50,6 +51,7 @@ export const Header = () => {
           </Space>,
         ]}
       ></PageHeader>
+      <SubHeader/>
     </div>
   );
 };
