@@ -1,0 +1,82 @@
+@import '~antd/dist/antd.css';
+
+.site-page-header-ghost-wrapper {
+  padding: 2px;
+  background-color: #131921;
+}
+
+.ant-page-header {
+  background-color: #131921;
+}
+
+.ant-page-header-heading {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.ant-page-header-heading-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar {
+  width: calc(100vw - 580px);
+  max-width: calc(100vw - 580px);
+}
+
+.ant-input-search-button {
+  background-color: #fdb13f;
+  border-color: #fdb13f;
+}
+
+.ant-input-search-button:hover {
+  background-color: #ff9900;
+  border-color: #ff9900;
+  cursor: pointer;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.header-buttons {
+  color: white;
+}
+
+.header-buttons:hover {
+  cursor: pointer;
+  color: #adadad;
+}
+
+.header-icon {
+  font-size: 30px;
+}
+
+.login {
+  padding: 3px 30px;
+  font-weight: bold;
+  background-color: #fdb13f;
+  border-color: #fdb13f;
+  border: solid 2px #fdb13f;
+  color: white;
+}
+
+.login:hover {
+  background-color: #ff9900;
+  border: solid 2px white;
+  color: white;
+}
+
+.login:focus {
+  background-color: #ff9900;
+  border: solid 2px white;
+  color: white;
+}
+
+.flag {
+  height: 15px;
+}
