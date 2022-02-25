@@ -4,7 +4,7 @@ export const Rating = ({ rating, setRating }) => {
   return (
     <>
       <h2>Customer Reviews</h2>
-      <Radio.Group value={rating} onChange={(e) => setRating(e.target.value)}>
+      <Radio.Group value={rating} onChange={(e) => setRating(e.target.value)} style={{marginBottom:'1.5rem'}}>
         <Space direction='vertical'>
           <Radio value={5}>
             <Rate defaultValue={5} disabled={true}></Rate>

@@ -1,2 +1,14 @@
-.category {
+.prices {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.prices:hover {
+  color: #fdb13f;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
 }

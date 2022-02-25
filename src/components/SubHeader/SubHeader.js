@@ -18,11 +18,14 @@ export const SubHeader = () => {
       <Space size={'middle'}>
         <Space size={'small'} style={{ fontWeight: 'bold' }}>
           <MenuOutlined />
-          Categories
+          <Link to='/categories' state={'Comics'}>
+            Categories
+          </Link>
         </Space>
-        {categories.map((e) => {
+        {categories.map((e, i) => {
+          console.log('e:', e);
           return (
-            <Link to='/categories' state={e} className='categories'>
+            <Link to='/categories' state={e} className='categories' key={i}>
               {e}
             </Link>
           );

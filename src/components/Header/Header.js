@@ -51,7 +51,7 @@ export const Header = () => {
           </Space>,
         ]}
       ></PageHeader>
-      <SubHeader/>
+      <SubHeader />
     </div>
   );
 };
