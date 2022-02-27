@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import './Product.css';
 
-export const Product = ({ image, name, price, id, rating }) => {
+export const Product = ({ image, name, price, id, rating,about }) => {
   const book = {
     image,
     name,
     price,
     id,
     rating,
+    about
   };
   const location = useLocation();
   console.log('location: ', location);

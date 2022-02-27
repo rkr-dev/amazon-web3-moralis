@@ -23,6 +23,7 @@ export const Results = ({ category="Comics", rating, priceMin, priceMax }) => {
           id={product.id}
           rating={rating}
           key={product.id}
+          about={product.about}
         />
       )):<>No Results Found</>}
     </>

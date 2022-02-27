@@ -2,6 +2,8 @@ import React from 'react';
 import { Rate } from 'antd';
 import { useLocation } from 'react-router-dom';
 import './products.css';
+import { Purchase } from '../components/Purchase/Purchase';
+
 
 export default function ProductPage() {
   let { state: book } = useLocation();
@@ -28,7 +30,7 @@ export default function ProductPage() {
           <p>{book.about}</p>
         </div>
         <div className='purchase-details'>
-          {/* <Purchase book={book} /> */}
+          <Purchase book={book} />
         </div>
       </div>
     </>
