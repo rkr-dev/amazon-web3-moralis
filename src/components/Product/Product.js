@@ -4,6 +4,13 @@ import { useLocation } from 'react-router-dom';
 import './Product.css';
 
 export const Product = ({ image, name, price, id, rating }) => {
+  const book = {
+    image,
+    name,
+    price,
+    id,
+    rating,
+  };
   const location = useLocation();
   console.log('location: ', location);
   return (
@@ -23,7 +30,7 @@ export const Product = ({ image, name, price, id, rating }) => {
           }
           {
             (location.pathname = '/categories' && (
-              <Link to={`/products/${id}`} className='login'>
+              <Link to={`/products/${id}`} className='login' state={book}>
                 Got to Product Page
               </Link>
             ))
