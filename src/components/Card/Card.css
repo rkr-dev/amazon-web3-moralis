@@ -1,0 +1,29 @@
+
+.card {
+  width:450px;
+  height:530px;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.card-category {
+  width: 50%;
+}
+
+.link {
+  font-size: 18px;
+  margin:5px;
+  color:#007185;
+}
+
+.link:hover {
+  color: #FF9900;
+  text-decoration: underline;
+}
