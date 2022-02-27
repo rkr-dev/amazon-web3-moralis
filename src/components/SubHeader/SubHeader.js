@@ -23,7 +23,6 @@ export const SubHeader = () => {
           </Link>
         </Space>
         {categories.map((e, i) => {
-          console.log('e:', e);
           return (
             <Link to='/categories' state={e} className='categories' key={i}>
               {e}

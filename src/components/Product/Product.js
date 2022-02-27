@@ -13,7 +13,7 @@ export const Product = ({ image, name, price, id, rating,about }) => {
     about
   };
   const location = useLocation();
-  console.log('location: ', location);
+
   return (
     <Card>
       <div style={{ display: 'flex' }}>
