@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import { Select, Button, Input } from 'antd';
+import { Select, Button } from 'antd';
+import { ModalComponent } from '../Modal/Modal';
 
 export const Purchase = ({ book }) => {
+  const [isModalVisible, setIsModalVisible] = useState(true);
+  const [delivery, setDelivery] = useState('');
   const { Option } = Select;
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
   return (
     <>
       <span className='price'> ${book.price}</span>
@@ -17,16 +23,23 @@ export const Purchase = ({ book }) => {
         <Option value={4}>4</Option>
         <Option value={5}>5</Option>
       </Select>
-      
-        <Button
-          className='login'
-          style={{ width: '100%', marginTop: '50px' }}
-          onClick={() => console.log('Clicked')}
-        >
-          <ShoppingCartOutlined /> Buy Now
-        </Button>
 
-      {/* <Modal /> */}
+      <Button
+        className='login'
+        style={{ width: '100%', marginTop: '50px' }}
+        onClick={() => setIsModalVisible(true)}
+      >
+        <ShoppingCartOutlined /> Buy Now
+      </Button>
+
+      <ModalComponent
+        isModalVisible={isModalVisible}
+        handleOk={handleOk}
+        setIsModalVisible={setIsModalVisible}
+        delivery={delivery}
+        setDelivery={setDelivery}
+        book={book}
+      />
     </>
   );
 };
