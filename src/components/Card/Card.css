@@ -1,7 +1,10 @@
-
 .card {
-  width:450px;
-  height:530px;
+  width: 450px;
+  height: 530px;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .card-content {
@@ -19,11 +22,11 @@
 
 .link {
   font-size: 18px;
-  margin:5px;
-  color:#007185;
+  margin: 5px;
+  color: #007185;
 }
 
 .link:hover {
-  color: #FF9900;
+  color: #ff9900;
   text-decoration: underline;
 }
