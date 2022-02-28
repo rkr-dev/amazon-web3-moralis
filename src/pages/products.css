@@ -1,6 +1,6 @@
 .product-content {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 50px;
     gap: 40px;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageHeader, Button, Input, Space, Badge } from 'antd';
-import { ShoppingCartOutlined, MenuOutlined } from '@ant-design/icons';
+import { ShoppingCartOutlined } from '@ant-design/icons';
 import { useMoralis } from 'react-moralis';
 import {
   bookstore as BookStore,
@@ -18,8 +18,8 @@ export const Header = () => {
       <PageHeader
         ghost={false}
         extra={[
-          <img src={Amazon} className='logo' key='1' />,
-          <img src={BookStore} className='logo' key='2' />,
+          <img src={Amazon} className='logo' alt='Amazon Logo' key='1' />,
+          <img src={BookStore} className='logo' alt='BookStore' key='2' />,
           <Search
             placeholder='Find A Product'
             enterButton

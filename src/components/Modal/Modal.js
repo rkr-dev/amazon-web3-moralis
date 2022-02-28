@@ -10,7 +10,6 @@ export const ModalComponent = ({
   setDelivery,
   book,
 }) => {
-
   return (
     <Modal
       title='Purchase Product'
@@ -31,7 +30,19 @@ export const ModalComponent = ({
         </div>
       </div>
       {isLoading && (
-        <div style={{display:'flex',justifyContent:'center',alignItems:'center',paddingTop:'10px',paddingBottom:'10px',border:'1px solid #f2f2f2',marginTop:'5px',borderRadius:'10px',transition:'all 3s ease-in'}} >
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            paddingTop: '10px',
+            paddingBottom: '10px',
+            border: '1px solid #f2f2f2',
+            marginTop: '5px',
+            borderRadius: '10px',
+            transition: 'all 3s ease-in',
+          }}
+        >
           <Spin>Loading..</Spin>
         </div>
       )}

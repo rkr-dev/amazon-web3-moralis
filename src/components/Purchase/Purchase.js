@@ -26,7 +26,7 @@ export const Purchase = ({ book }) => {
       receiver: '0xB6913De0E15aE0Ce35ffd5FD217485629e137fA9',
     };
 
-    let result = await Moralis.transfer(recieverDetails);
+    await Moralis.transfer(recieverDetails);
 
     const Transaction = Moralis.Object.extend('Transaction');
     const transaction = new Transaction();
@@ -52,15 +52,15 @@ export const Purchase = ({ book }) => {
         <Option value={4}>4</Option>
         <Option value={5}>5</Option>
       </Select>
-
-      <Button
-        className='login'
-        style={{ width: '100%', marginTop: '50px' }}
-        onClick={() => setIsModalVisible(true)}
-      >
-        <ShoppingCartOutlined /> Buy Now
-      </Button>
-
+      {chainId === '0x13881' && (
+        <Button
+          className='login'
+          style={{ width: '100%', marginTop: '50px' }}
+          onClick={() => setIsModalVisible(true)}
+        >
+          <ShoppingCartOutlined /> Buy Now
+        </Button>
+      )}
       <ModalComponent
         isModalVisible={isModalVisible}
         isLoading={isLoading}
